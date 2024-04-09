@@ -2,11 +2,9 @@
 <manifest>
 
   <remote  name="aosp"
-           fetch=".."
-           review="https://android-review.googlesource.com/" />
-  <default revision="refs/tags/android-14.0.0_r31"
-           remote="aosp"
-           sync-j="4" />
+           fetch="https://android.googlesource.com"
+           review="https://android-review.googlesource.com/"
+           revision="refs/tags/android-14.0.0_r31" />
 
   <superproject name="platform/superproject" remote="aosp" revision="android-14.0.0_r31"/>
   <contactinfo bugurl="go/repo-bug" />
