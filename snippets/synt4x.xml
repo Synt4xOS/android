@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <remote name="github"
+          fetch=".." />
+
+  <remote name="private"
+          fetch="ssh://git@github.com" />
+
+  <default revision="refs/heads/master"
+           remote="github"
+           sync-j="4" />
+
+  <!-- Synt4xOS -->
+  <project path="android" name="Synt4xOS/android" />
+  <project path="vendor/synt4x" name="Synt4xOS/android_vendor_synt4x" />
+</manifest>
