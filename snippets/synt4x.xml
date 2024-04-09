@@ -33,14 +33,18 @@
   <remove-project name="platform/frameworks/base" />
   <project path="frameworks/base" name="Synt4xOS/android_frameworks_base" groups="pdk-cw-fs,pdk-fs,sysui-studio" />
 
+  <!-- Synt4xOS device repos -->
+  <remove-project name="device/google/gs101" />
+  <project path="device/google/gs101" name="Synt4xOS/android_device_google_gs101" groups="device,slider,bluejay,blueport,pdk-gs-arm" />
+  <remove-project name="device/google/bluejay" />
+  <project path="device/google/bluejay" name="Synt4xOS/android_device_google_bluejay" groups="device,bluejay" />
+  <project path="vendor/google_devices/bluejay" name="Synt4xOS/proprietary_vendor_google_bluejay" groups="proprietary,bluejay" />
+
   <!-- Synt4xOS removed device repos -->
   <remove-project name="device/amlogic/yukawa" />
   <remove-project name="device/amlogic/yukawa-kernel" />
   <remove-project name="device/google/barbet" />
   <remove-project name="device/google/barbet-sepolicy" />
-  <remove-project name="device/google/bluejay" />
-  <remove-project name="device/google/bluejay-sepolicy" />
-  <remove-project name="device/google/bluejay-kernel" />
   <remove-project name="device/google/bramble" />
   <remove-project name="device/google/bramble-sepolicy" />
   <remove-project name="device/google/contexthub" />
@@ -50,11 +54,8 @@
   <remove-project name="device/google/felix" />
   <remove-project name="device/google/felix-kernel" />
   <remove-project name="device/google/felix-sepolicy" />
-  <remove-project name="device/google/gs101" />
-  <remove-project name="device/google/gs101-sepolicy" />
   <remove-project name="device/google/gs201" />
   <remove-project name="device/google/gs201-sepolicy" />
-  <remove-project name="device/google/gs-common" />
   <remove-project name="device/google/lynx" />
   <remove-project name="device/google/lynx-kernel" />
   <remove-project name="device/google/lynx-sepolicy" />
