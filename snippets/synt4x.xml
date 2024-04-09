@@ -14,4 +14,22 @@
   <!-- Synt4xOS -->
   <project path="android" name="Synt4xOS/android" />
   <project path="vendor/synt4x" name="Synt4xOS/android_vendor_synt4x" />
+
+  <!-- Synt4xOS forked repos -->
+  <remove-project name="platform/build" />
+  <project path="build/make" name="Synt4xOS/android_build" groups="pdk">
+    <linkfile dest="build/CleanSpec.mk" src="CleanSpec.mk" />
+    <linkfile dest="build/buildspec.mk.default" src="buildspec.mk.default" />
+    <linkfile dest="build/core" src="core" />
+    <linkfile dest="build/envsetup.sh" src="envsetup.sh" />
+    <linkfile dest="build/target" src="target" />
+    <linkfile dest="build/tools" src="tools" />
+  </project>
+  <remove-project name="platform/build/soong" />
+  <project path="build/soong" name="Synt4xOS/android_build_soong" groups="pdk,tradefed">
+    <linkfile dest="Android.bp" src="root.bp" />
+    <linkfile dest="bootstrap.bash" src="bootstrap.bash" />
+  </project>
+  <remove-project name="platform/frameworks/base" />
+  <project path="frameworks/base" name="Synt4xOS/android_frameworks_base" groups="pdk-cw-fs,pdk-fs,sysui-studio" />
 </manifest>
